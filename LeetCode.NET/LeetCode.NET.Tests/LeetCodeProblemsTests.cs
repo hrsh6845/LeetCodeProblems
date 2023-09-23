@@ -27,5 +27,12 @@ namespace LeetCode.NET.Tests
         {
             return _easyProblems.AverageSalaryExcludingMinimumAndMax_1491(salary);
         }
+
+        [TestCase(new int[] { 2, 7, 11, 15 }, 9, ExpectedResult = new int[] { 0, 1 })]
+        [TestCase(new int[] { 3, 3 }, 6, ExpectedResult = new int[] { 0, 1 })]
+        public int[] TwoSum_1_Test(int[] nums, int target)
+        {
+            return _easyProblems.TwoSum_1_BruteForce(nums, target);
+        }
     }
 }
