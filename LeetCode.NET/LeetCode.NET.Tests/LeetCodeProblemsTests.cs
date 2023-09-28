@@ -34,5 +34,12 @@ namespace LeetCode.NET.Tests
         {
             return _easyProblems.TwoSum_1_BruteForce(nums, target);
         }
+
+        [TestCase(121, ExpectedResult = true)]
+        [TestCase(10, ExpectedResult = false)]
+        public bool PalindromeNumber_9_Test(int x)
+        {
+            return _easyProblems.IsPalindromeNumber_9(x);
+        }
     }
 }

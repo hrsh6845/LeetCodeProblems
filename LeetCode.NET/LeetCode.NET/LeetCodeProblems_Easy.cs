@@ -44,4 +44,36 @@ public class LeetCodeProblems_Easy
 
         return new int[] { 0, 0 };
     }
+
+    /// <summary>
+    /// https://leetcode.com/problems/palindrome-number/description/
+    /// Problem Id : 9
+    /// </summary>
+    /// <param name="x">return true if number x is a palindrome.</param>
+    /// <returns>boolean value</returns>
+    public bool IsPalindromeNumber_9(int x)
+    {
+        // get remainder of the number
+
+        int remainder = 0;
+        int number = x;
+        while (number > 0)
+        {
+            remainder = remainder * 10 + number % 10;
+            number /= 10;
+        }
+        return remainder == x;
+    }
+
+    /// <summary>
+    /// https://leetcode.com/problems/roman-to-integer/description/
+    ///
+    /// Problem Id : 13
+    /// </summary>
+    /// <param name="s">input string.</param>
+    /// <returns>Convert given string to Roman Numberals.</returns>
+    public int RomanToInt_13(string s)
+    {
+
+    }
 }
